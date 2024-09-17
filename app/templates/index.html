@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Prediction</title>
+</head>
+<body>
+    <h1>Predict Mental Health Status</h1>
+    <form method="POST">
+        <label for="statement">Enter your statement:</label><br>
+        <textarea id="statement" name="statement" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if user_input %}
+    <h2>Prediction:</h2>
+    <p>Input: {{ user_input }}</p>
+    <p>Prediction: {{ prediction }}</p>
+    {% endif %}
+</body>
+</html>
