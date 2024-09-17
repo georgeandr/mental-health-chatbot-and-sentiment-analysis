@@ -1,4 +1,4 @@
-from controllers.controllers import router as items_router
+from routes.routes import router as items_router
 from fastapi import FastAPI
 
 app = FastAPI()
